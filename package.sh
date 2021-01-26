@@ -45,8 +45,8 @@ for os in $os_all; do
             mv ./autorun_${os}_${arch} ${autorun_path}/autorun
         fi  
 
-        cp ../LICENSE ${frp_path}
-        
+        cp ../LICENSE ${autorun_path}
+
         # packages
         cd ./packages
         if [ "x${os}" = x"windows" ]; then
