@@ -23,8 +23,6 @@ for os in $os_all; do
         autorun_dir_name="autorun_${autorun_version}_${os}_${arch}"
         autorun_path="./packages/autorun_${autorun_version}_${os}_${arch}"
 
-        echo $autorun_dir_name
-
         if [ "x${os}" = x"windows" ]; then
             if [ ! -f "./autorun_${os}_${arch}.exe" ]; then
                 continue
