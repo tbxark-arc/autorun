@@ -4,6 +4,8 @@
 
 .idea
 .vscode
+bin
+release
 
 ### Go ###
 # Binaries for programs and plugins
