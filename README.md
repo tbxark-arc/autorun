@@ -2,7 +2,7 @@
 
 `autorun` is a tool that listens for file changes and automatically executes specified commands. You can use `autorun` to automatically compile and run code or update dependencies.
 
-`autorun` 是一个监听文件变化并自动允许指定命令的工具，你可以使用`autorun`自动编译允许代码，或者再依赖配置文件发生变化时自动刷新依赖。
+`autorun` 是一个监听文件变化并自动允许指定命令的工具，你可以使用`autorun`自动编译运行代码，或者再依赖配置文件发生变化时自动刷新依赖。
 
 ## Usage
 
