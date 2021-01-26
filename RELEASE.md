@@ -1,2 +1,2 @@
 - Add file filtering 
-- Add compile and run command functins
+- Add compile and run command functions 
