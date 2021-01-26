@@ -47,11 +47,6 @@ Usage of autorun:
 
 ```
 
-## Install
-
-```shell
-go install github.com/tbxark/autorun
-```
 
 ## Author
 
