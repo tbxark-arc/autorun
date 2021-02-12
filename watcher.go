@@ -31,7 +31,9 @@ func buildWatcher(path string, done chan bool, eventHandler func(event fsnotify.
 		}
 	}()
 
-	watcher.Add(path)
+	if aErr := watcher.Add(path); aErr != nil {
+		printLog("[Error]", aErr)
+	}
 	wErr := filepath.Walk(path, func(path string, info os.FileInfo, err error) error {
 		if info.IsDir() && strings.Index(path, "/.") < 0 {
 			if aErr := watcher.Add(path); aErr != nil {

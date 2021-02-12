@@ -43,7 +43,7 @@ func loadTemplate(template Template) []string {
 	return res
 }
 
-func loadConfig(path string) AutoRunConfig {
+func loadConfig(path string) *AutoRunConfig {
 	file, err := ioutil.ReadFile(path)
 	if err != nil {
 		log.Fatal(err)
@@ -54,7 +54,7 @@ func loadConfig(path string) AutoRunConfig {
 	}
 	include := loadTemplate(config.Include)
 	exclude := loadTemplate(config.Exclude)
-	return AutoRunConfig{
+	return &AutoRunConfig{
 		config.Build,
 		config.Run,
 		include,
